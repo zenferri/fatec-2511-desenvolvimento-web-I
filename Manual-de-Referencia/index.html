@@ -1,0 +1,906 @@
+<html>
+<html lang="pt-BR">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markup.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Guia de TAGs HTML5">
+    <meta name="keywords" content="HTML, Guia, TAGs">
+    <meta name="author" content="José Augusto Zen Ferri">
+    <meta name="robots" content="index">
+    <title>Guia de TAGs HTML</title>
+   
+
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center;">Guia de TAGs HTML</h1>
+         <h4 style="text-align: center;">Aluno: José Augusto Zen Ferri</h4>
+    </header>
+    <section id="indice">
+        <h2>Menu de Navegação</h2>
+        <nav aria-label="Principal">
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#tags-estrutura-texto">Tags de Estrutura e Texto</a></li>
+                <li><a href="#tags-semantica">Tags Semânticas do HTML5</a></li>
+                <li><a href="#tags-multimedia">Tags Multimídia no HTML5</a></li>
+                <li><a href="#tags-formularios">Tags de Formulários no HTML5</a></li>
+                <li><a href="#tags-variadas">Outras tags úteis no HTML5 (DESAFIO)</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <main id="conteudo">
+        <section id="introducao">
+            <h2>Introdução</h2>
+            <p>O presente trabalho tem por finalidade desenvolver, de forma integral e estruturada,
+                uma página em HTML que funcione como um manual de referência.</br>
+                </br>
+                Para cada <b>tag</b> estudada, será apresentada sua definição, a descrição de sua
+                finalidade e a exemplificação prática de sua utilização
+                por meio de trechos de código funcional.</br>
+                </br>
+                A página será organizada em seções distintas, cada uma dedicada a um conjunto específico de tags.</br>
+                </br>
+                Utilizamos como referência essencialmente o site <a href="https://www.w3schools.com"
+                    target="_blank">W3Schools.com</a>.</br>
+                </br>
+                Também utilizamos as bibliotecas prismjs.com, prism-markup e prism.css para melhorar a formatação e
+                deixar o código mais legível. Para isso contamos com a boa e velha ajuda do Google para ajusta-lo no
+                código.
+            </p>
+            <p><a href="#indice">🔝 Voltar ao índice</a></p>
+        </section>
+        <section id="tags-estrutura-texto">
+            <h2>Tags de Estrutura e Texto</h2>
+
+            <!-- NOVA TAG -->
+
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;h1&gt; até &lt;h6&gt;</h3>
+                </header>
+                <p>As tags &lt;h1&gt; até &lt;h6&gt; são usadas para definir cabeçalhos HTML. &lt;h1&gt; define o
+                    cabeçalho mais importante, enquanto &lt;h6&gt; define o menos importante. Essas tags ajudam a
+                    organizar o conteúdo em seções e subseções, melhorando a legibilidade e a estrutura do documento.
+                    Abaixo o exemplo de uso no código HTML e o resultado visual.
+                </p>
+                <h3> Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;h1&gt;Exemplo de cabeçalho 1&lt;/h1&gt;
+&lt;h2&gt;Exemplo de cabeçalho 2&lt;/h2&gt;
+&lt;h3&gt;Exemplo de cabeçalho 3&lt;/h3&gt;
+&lt;h4&gt;Exemplo de cabeçalho 4&lt;/h4&gt;
+&lt;h5&gt;Exemplo de cabeçalho 5&lt;/h5&gt;
+&lt;h6&gt;Exemplo de cabeçalho 6&lt;/h6&gt;
+</code></pre>
+
+                <h3> Resultado visual:</h3>
+
+                <h1 style="font-size: 2em;">Exemplo de cabeçalho 1</h1>
+                <h2>Exemplo de cabeçalho 2</h2>
+                <h3>Exemplo de cabeçalho 3</h3>
+                <h4>Exemplo de cabeçalho 4</h4>
+                <h5>Exemplo de cabeçalho 5</h5>
+                <h6>Exemplo de cabeçalho 6</h6>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+            <!-- FIM DA EXPLICAÇÃO-->
+
+            <!-- NOVA TAG -->
+
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;p&gt;</h3>
+                </header>
+                <p>A tag &lt;p&gt; define um parágrafo em HTML. Ela é usada para agrupar blocos de texto, separando-os
+                    visualmente e semanticamente. Abaixo o exemplo de uso no código HTML e o resultado visual.
+                </p>
+                <h3> Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;p&gt;Isto é um texto em um parágrafo&lt;/p&gt;
+</code></pre>
+                <h3> Resultado visual:</h3>
+                <p>Isto é um texto em um parágrafo!</p>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+            <!-- FIM DA EXPLICAÇÃO-->
+
+            <!-- NOVA TAG -->
+
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;a&gt;</h3>
+                </header>
+                <p>A tag &lt;a&gt; define um hyperlink, que é usado para vincular uma página a outra ou a uma seção
+                    específica dentro da mesma página. O atributo mais importante para a tag &lt;a&gt; é o elemento
+                    <code>href</code>. Abaixo o exemplo de uso no código HTML e o resultado visual.
+                </p>
+                <h3> Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;a href="https://www.w3schools.com" target="_blank">Visite W3Schools.com!&lt;/a&gt;
+</code></pre>
+                <h3> Resultado visual:</h3>
+                <a href="https://www.w3schools.com" target="_blank">Visite W3Schools.com!</a>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+            <!-- FIM DA EXPLICAÇÃO-->
+
+            <!-- NOVA TAG -->
+
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;strong&gt;</h3>
+                </header>
+                <p>A tag &lt;strong&gt; é usada para definir texto em negrito pelos navegadores. Pode ser usado como um
+                    atributo global ou em conteúdo específico com a tag &lt;b&gt; Abaixo o exemplo de uso no código HTML
+                    e o resultado visual.
+                </p>
+                <h3> Exemplo de código em estrutra global:</h3>
+                <pre><code class="language-html">
+&lt;style&gt;       
+strong {
+    font-weight: bold;
+ }
+ &lt;/style&gt;
+</code></pre>
+                <h3> Resultado visual:</h3>
+                <p><b>Texto em negrito!</b></p>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+            <!-- FIM DA EXPLICAÇÃO-->
+
+            <!-- NOVA TAG -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;em&gt;</h3>
+                </header>
+                <p>A tag &lt;em&gt; é usada para colocar o texto <em>itálico</em>.</p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;p&gt;A Tag &lt;em&gt;serve para colocar o texto em itálico!&lt;/em&gt;&lt;/p&gt;
+</code></pre>
+
+                <h3>Resultado visual:</h3>
+                <p>A Tag<em>serve para colocar o texto em itálico</em>!</p>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+            <!-- FIM DA TAG -->
+
+            <!-- NOVA TAG -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;ul&gt;</h3>
+                </header>
+                <p>A tag &lt;ul&gt; define uma <b>lista ordenada</b> exibida com marcadores tipo bolinhas.
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;ul&gt;
+  &lt;li&gt;São Paulo&lt;/li&gt;
+  &lt;li&gt;Rio de Janeiro&lt;/li&gt;
+  &lt;li&gt;Espírito Santo&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+                <h3>Resultado visual:</h3>
+                <ul>
+                    <li>São Paulo</li>
+                    <li>Rio de Janeiro</li>
+                    <li>Espírito Santo</li>
+                </ul>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+            <!-- FIM DA TAG -->
+
+            <!-- NOVA TAG -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;ol&gt;</h3>
+                </header>
+                <p>A tag &lt;ol&gt; cria uma <b>lista numerada</b></p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;ol&gt;
+  &lt;li&gt;Primeiro item!&lt;/li&gt;
+  &lt;li&gt;Segundo item!&lt;/li&gt;
+  &lt;li&gt;Terceiro item! &lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+
+                <h3>Resultado visual:</h3>
+                <ol>
+                    <li>Primeiro item!</li>
+                    <li>Segundo item!</li>
+                    <li>Terceiro item!</li>
+                </ol>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+            <!-- FIM DA TAG -->
+
+            <!-- NOVA TAG -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;li&gt;</h3>
+                </header>
+                <p>A tag &lt;li&gt; define um <b>item de lista</b> dentro de uma lista ordenada (&lt;ol&gt;) ou não
+                    ordenada (&lt;ul&gt;).</p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;ul&gt;
+  &lt;li&gt;Coca-cola&lt;/li&gt;
+  &lt;li&gt;Chá&lt;/li&gt;
+  &lt;li&gt;Café&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+                <h3>Resultado visual:</h3>
+                <ul>
+                    <li>Coca-cola</li>
+                    <li>Chá</li>
+                    <li>Café</li>
+                </ul>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+            <!-- FIM DA TAG -->
+
+            <!-- NOVA TAG -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;img&gt;</h3>
+                </header>
+                <p>A tag &lt;img&gt; é usada para inserir imagens em uma página HTML.
+                    Ela usa atributos como <code>src</code> (caminho da imagem) e <code>alt</code> (texto alternativo).
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;img src="https://www.hospedaria.com.br/site/assets/img/logo-topo.png" alt="Exemplo de imagem"&gt;
+</code></pre>
+
+                <h3>Resultado visual:</h3>
+                <img src="https://www.hospedaria.com.br/site/assets/img/logo-topo.png" alt="Exemplo de imagem">
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+            <!-- FIM DA TAG -->
+
+            <!-- NOVA TAG -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;div&gt;</h3>
+                </header>
+                <p>A tag &lt;div&gt; é um contêiner genérico para agrupar outros elementos e facilitar o estilo e
+                    organização da página.</p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;div style="border: 1px solid #333; padding: 10px;"&gt;
+  &lt;p&gt;Este é um parágrafo dentro de uma div&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+                <h3>Resultado visual:</h3>
+                <div style="border: 1px solid #333; padding: 10px;">
+                    <p>Este é um parágrafo dentro de uma div</p>
+                </div>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+            <!-- FIM DA TAG -->
+
+            <!-- NOVA TAG -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;span&gt;</h3>
+                </header>
+                <p>A tag &lt;span&gt; é usada para aplicar estilo a uma parte do texto sem quebrar a linha.</p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;p&gt;O céu é &lt;span style="color:blue;"&gt;azul&lt;/span&gt;!&lt;/p&gt;
+</code></pre>
+
+                <h3>Resultado visual:</h3>
+                <p>O céu é <span style="color:blue;">azul</span>!</p>
+            </article>
+            <p><a href="#indice">🔝 Voltar ao índice</a></p>
+            </br>
+            <!-- FIM DA TAG -->
+        </section>
+
+
+        <section id="tags-semantica">
+            <h2>Tags Semânticas no HTML5</h2>
+
+            <!-- TAG: <header> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;header&gt;</h3>
+                </header>
+                <p>A tag &lt;header&gt; define o cabeçalho de uma página ou seção.
+                    Normalmente contém o título principal, logotipo ou elementos de navegação.</p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;header&gt;
+  &lt;h1&gt;Bem-vindo ao meu site&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;a href="#"&gt;Início&lt;/a&gt; |
+    &lt;a href="#"&gt;Sobre&lt;/a&gt; |
+    &lt;a href="#"&gt;Contato&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <header style="border:1px solid #ccc; padding:10px;">
+                    <h1>Bem-vindo ao meu site</h1>
+                    <nav>
+                        <a href="#">Início</a> | <a href="#">Sobre</a> | <a href="#">Contato</a>
+                    </nav>
+                </header>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+
+            <!-- TAG: <footer> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;footer&gt;</h3>
+                </header>
+                <p>A tag &lt;footer&gt; representa o rodapé de uma página ou seção, geralmente com informações de
+                    contato, direitos autorais ou links úteis.</p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;footer&gt;
+  &lt;p&gt;©Zen, 2025.Todos os direitos reservados.&lt;/p&gt;
+&lt;/footer&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <footer style="background:#f1f1f1; padding:10px; text-align:center;">
+                    <p>© 2025 Meu Site. Todos os direitos reservados.</p>
+                </footer>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+
+            <!-- TAG: <nav> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;nav&gt;</h3>
+                </header>
+                <p>A tag &lt;nav&gt; define uma seção de navegação, normalmente usada para menus de links.</p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Serviços&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Contato&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <nav style="background:#eef; padding:8px;">
+                    <ul style="list-style:none; display:flex; gap:10px; margin:0; padding:0;">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+
+            <!-- TAG: <main> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;main&gt;</h3>
+                </header>
+                <p>A tag &lt;main&gt; representa o conteúdo principal da página, único e central.</p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;main&gt;
+  &lt;h2&gt;Artigo Principal&lt;/h2&gt;
+  &lt;p&gt;Este é o conteúdo principal da página.&lt;/p&gt;
+&lt;/main&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <main style="border:1px dashed #555; padding:10px;">
+                    <h2>Artigo Principal</h2>
+                    <p>Este é o conteúdo principal da página.</p>
+                </main>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+
+            <!-- TAG: <section> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;section&gt;</h3>
+                </header>
+                <p>A tag &lt;section&gt; define uma seção temática de conteúdo, agrupando partes relacionadas.</p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;section&gt;
+  &lt;h2&gt;Notícias Recentes&lt;/h2&gt;
+  &lt;p&gt;Última atualização do site.&lt;/p&gt;
+&lt;/section&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <section style="border:1px solid #ccc; padding:10px;">
+                    <h2>Notícias Recentes</h2>
+                    <p>Última atualização do site.</p>
+                </section>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+
+            <!-- TAG: <article> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;article&gt;</h3>
+                </header>
+                <p>A tag &lt;article&gt; representa um conteúdo independente e completo, como uma notícia, post ou
+                    artigo de blog.</p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;article&gt;
+  &lt;h2&gt;Título do Post&lt;/h2&gt;
+  &lt;p&gt;Conteúdo do artigo...&lt;/p&gt;
+&lt;/article&gt;
+  </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <article style="border:1px solid #aaa; padding:10px;">
+                    <h2>Título do Post</h2>
+                    <p>Conteúdo do artigo...</p>
+                </article>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+
+            <!-- TAG: <aside> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;aside&gt;</h3>
+                </header>
+                <p>A tag &lt;aside&gt; é usada para conteúdo complementar ou lateral, como notas, anúncios ou links
+                    relacionados.</p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;aside&gt;
+  &lt;h4&gt;Dica Rápida&lt;/h4&gt;
+  &lt;p&gt;Use sempre tags semânticas para melhorar o SEO.&lt;/p&gt;
+&lt;/aside&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <aside style="background:#f9f9f9; border-left:4px solid #4CAF50; padding:10px; margin:10px 0;">
+                    <h4>Dica Rápida</h4>
+                    <p>Use sempre tags semânticas para melhorar o SEO.</p>
+                </aside>
+            </article>
+            <p><a href="#indice">🔝 Voltar ao índice</a></p>
+            </br>
+        </section>
+
+        <section id="tags-multimedia">
+            <h2>Tags Multimídia no HTML5</h2>
+
+            <!-- TAG: <video> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;video&gt;</h3>
+                </header>
+                <p>
+                    A tag &lt;video&gt; é usada para incorporar e mostrar vídeos em uma página HTML.
+                    Os atributos <code>controls</code> (exibe controles de reprodução), como play, pause e volume.
+                    O <code>autoplay</code> (inicia automaticamente), <code>loop</code> (reproduz em repetição)
+                    e <code>muted</code> (silenciado por padrão). É também altamente recomendado incluir
+                    <code>width</code>
+                    e <code>height</code> para definir o tamanho do vídeo e evitar problemas na página. O elemento
+                    <code>&lt;source&gt;</code>
+                    dentro da tag &lt;video&gt; permitem videos alternativos com diferentes formatos que o navegador
+                    pode escolher. O navegador vai usar
+                    o primeiro formato que ele suportar. Importante ainda lembrar que o texto entre a tag de abertura e
+                    fechamento do &lt;video&gt;
+                    é exibido caso o navegador não suporte o elemento de video.
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;video width="320" height="240" controls&gt;
+  &lt;source src="video-exemplo.mp4" type="video/mp4"&gt;
+  Seu navegador não suporta a tag de vídeo.
+&lt;/video&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <video width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+                <p>Video exemplificativo retirado de
+                    <a href="https://www.w3schools.com/html/html5_video.asp" target=" _blank"> W3School.com</a>.
+                    Cortesia de <a href="https://www.bigbuckbunny.org" target="_blank"> Big Buck Bunny</a>.
+                </p>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+
+            <!-- TAG: <audio> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;audio&gt;</h3>
+                </header>
+                <p>
+                    A tag &lt;audio&gt; é usada para inserir arquivos de áudio em uma página HTML.
+                    Tal como no vídeo, pode-se usar atributos como <code>controls</code>, <code>autoplay</code> e
+                    <code>loop</code>.
+                    O atributo <code>controls</code> é imprescindível para que o usuário reproduza (play) ou pause o
+                    áudio.
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;audio controls&gt;
+  &lt;source src="audio-exemplo.mp3" type="audio/mpeg"&gt;
+  Seu navegador não suporta a tag de áudio.
+&lt;/audio&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <audio controls>
+                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    Seu navegador não suporta a tag de áudio.
+                </audio>
+                <p>Audio retirado de
+                    <a href="https://www.w3schools.com/html/html5_audio.asp" target=" _blank"> W3School.com</a>.
+                </p>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+        </section>
+
+        <section id="tags-formularios">
+            <h2>Tags de Formulários no HTML5</h2>
+
+            <!-- TAG: <form> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;form&gt;</h3>
+                </header>
+                <p>
+                    A tag &lt;form&gt; é usada para criar formulários.
+                    Ela contém campos de entrada, botões, menus suspensos e outros elementos que permitem ao
+                    usuário enviar dados o informações.
+                    Os atributos mais comuns são <code>action</code> (define para onde enviar os dados) e
+                    <code>method</code> (GET ou POST).
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;form action="/enviar" method="post"&gt;
+  &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+  &lt;input type="text" id="nome" name="nome"&gt;
+  &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+&lt;/form&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <form action="#">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                    <button type="submit">Enviar</button>
+                </form>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+
+            <!-- TAG: <input> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;input&gt;</h3>
+                </header>
+                <p>
+                    A tag &lt;input&gt; cria campos interativos em formulários. É provavelmente o elemento mais
+                    utilizado em formulários
+                    O atributo <code>type</code> define o tipo de dado aceito, tal como texto, número, email, senha,
+                    checkbox, radio etc.
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;input type="text" placeholder="Digite seu nome"&gt;&lt;br&gt;
+&lt;input type="email" placeholder="Digite seu e-mail"&gt;&lt;br&gt;
+&lt;input type="password" placeholder="Digite sua senha"&gt;&lt;br&gt;
+&lt;input type="checkbox" id="aceito"&gt;
+&lt;label for="aceito"&gt;Aceito os termos&lt;/label&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <input type="text" placeholder="Digite seu nome"><br>
+                <input type="email" placeholder="Digite seu e-mail"><br>
+                <input type="password" id="senha" placeholder="Digite sua senha"><br>
+                <input type="checkbox" id="aceito">
+                <label for="aceito">Aceito os termos</label>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+
+            <!-- TAG: <label> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;label&gt;</h3>
+                </header>
+                <p>
+                    A tag &lt;label&gt; é usada para associar um texto descritivo a um campo de formulário.
+                    Ao clicar no rótulo, o campo correspondente é automaticamente selecionado, melhorando a experiência
+                    de uso.
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;form&gt;
+  &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+&lt;/form&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <form>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </form>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+
+            <!-- TAG: <button> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;button&gt;</h3>
+                </header>
+                <p>
+                    A tag &lt;button&gt; é usada para criar botões clicáveis em uma página HTML.
+                    Pode ser usada para enviar formulários (<code>type="submit"</code>), redefini-los
+                    (<code>type="reset"</code>) ou executar ações com JavaScript (<code>type="button"</code>).
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;button type="button"&gt;Clique Aqui&lt;/button&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <button type="button">Clique Aqui</button>
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+                </br>
+            </article>
+        </section>
+
+        <section id="tags-variadas">
+            <h2>Outras TAGs úteis no HTML5</h2>
+
+            <!-- TAG: <iframe> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;iframe&gt;</h3>
+                </header>
+                <p>
+                    A tag &lt;iframe&gt; é usada para incorporar outro documento HTML dentro da página,
+                    muito utilizada para inserir vídeos do YouTube.
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;iframe width="420" height="315"
+  src="https://www.youtube.com/embed/M7lc1UVf-VE?controls=1"
+  frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/M7lc1UVf-VE?controls=1"
+                    title="YouTube video player" frameborder="0" allowfullscreen>
+                </iframe>
+
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+            </article>
+
+            <!-- TAG: <summary> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;summary&gt;</h3>
+                </header>
+                <p>
+                    A tag &lt;summary&gt; define um título visível para o elemento &lt;details&gt;.
+                    Ao clicar no título, o conteúdo adicional pode ser exibido ou ocultado.
+                    É útil para FAQs, descrições ou informações adicionais que não precisam estar sempre visíveis.
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;details&gt;
+  &lt;summary&gt;Clique para ver mais&lt;/summary&gt;
+  &lt;p&gt;Não há nada para ser visto aqui! Circulando... Vamos, circulando! Vai... vai...&lt;/p&gt;
+&lt;/details&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <details>
+                    <summary>Clique para ver mais</summary>
+                    <p>Não há nada para ser visto aqui! Circulando... Vamos, circulando! Vai... vai...</p>
+                </details>
+
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+            </article>
+
+            <!-- TAG: <select> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;select&gt;</h3>
+                </header>
+                <p>
+                    A tag &lt;select&gt; cria uma lista suspensa (dropdown) em formulários.
+                    Cada opção é definida dentro de um elemento &lt;option&gt;.
+                    O atributo <code>name</code> identifica o campo, e o atributo <code>value</code> em &lt;option&gt;
+                    define o valor enviado no formulário.
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;form&gt;
+  &lt;label for="linguagem"&gt;Escolha uma linguagem:&lt;/label&gt;
+  &lt;select id="linguagem" name="linguagem"&gt;
+    &lt;option value="html"&gt;HTML&lt;/option&gt;
+    &lt;option value="css"&gt;CSS&lt;/option&gt;
+    &lt;option value="javascript"&gt;JavaScript&lt;/option&gt;
+    &lt;option value="python"&gt;Python&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/form&gt;
+  </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <form>
+                    <label for="linguagem">Escolha uma linguagem:</label>
+                    <select id="linguagem" name="linguagem">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="javascript">JavaScript</option>
+                        <option value="python">Python</option>
+                    </select>
+                </form>
+
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+            </article>
+
+            <!-- NOVA TAG: <script> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;script&gt;</h3>
+                </header>
+                <p>
+                    A tag &lt;script&gt; é usada para inserir ou fazer referencia a códigos em JavaScript dentro da
+                    página
+                    HTML.
+                    Pode ser usada com código escrito diretamente no documento ou importando de arquivos externos via
+                    atributo <code>src</code>.
+                    É comumente usado para validação de formulários, manipulação de imagens e outras modificações
+                    dinâmicas.
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;!-- Script interno --&gt;
+&lt;script&gt;
+  function mostrarMensagem() {
+    alert("Olá Mundo!!");
+  }
+&lt;/script&gt;
+
+&lt;button onclick="mostrarMensagem()"&gt;Clique aqui&lt;/button&gt;
+
+&lt;!-- Script externo --&gt;
+&lt;script src="meu-script.js"&gt;&lt;/script&gt;
+  </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <button onclick="alert('Olá Mundo!!')">
+                    Clique aqui
+                </button>
+
+                <p>
+                    O botão executa um código JavaScript ao ser clicado.
+                    Também é possível carregar um arquivo externo, tal como mostrado na última linha do código.
+                </p>
+
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+            </article>
+
+            <!-- TAG: <table> -->
+            <article>
+                <header>
+                    <h3 style="color:rgb(0, 4, 255);">&lt;table&gt;</h3>
+                </header>
+                <p>
+                    A tag &lt;table&gt; é usada para criar tabelas em HTML.
+                    Cada tabela é composta por linhas (&lt;tr&gt;), coluna (&lt;th&gt;) e células
+                    (&lt;td&gt;).
+                </p>
+
+                <h3>Exemplo de código:</h3>
+                <pre><code class="language-html">
+&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nome&lt;/th&gt;
+    &lt;th&gt;Idade&lt;/th&gt;
+    &lt;th&gt;Cidade&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;José&lt;/td&gt;
+    &lt;td&gt;45&lt;/td&gt;
+    &lt;td&gt;Jaú&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Bruna&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+    &lt;td&gt;Bauru&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+    </code></pre>
+
+                <h3>Resultado visual:</h3>
+                <table border="1">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Cidade</th>
+                    </tr>
+                    <tr>
+                        <td>José</td>
+                        <td>45</td>
+                        <td>Jaú</td>
+                    </tr>
+                    <tr>
+                        <td>Bruna</td>
+                        <td>30</td>
+                        <td>Bauru</td>
+                    </tr>
+                </table>
+
+                <p><a href="#indice">🔝 Voltar ao índice</a></p>
+            </article>
+        </section>
+        </section>
+    </main>
+</body>
+
+</html>

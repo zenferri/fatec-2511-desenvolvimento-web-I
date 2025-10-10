@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="=pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Receita de Bolo de Fubá</title>
+
+    <style>
+        /* Sempre que começar, ja faz o reset */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px 10px 20px 10px;
+        }
+
+        /* Com vírgula, ele aplica o mesmo CSS a todas as tags da lista */
+
+        h1,
+        h2 {
+            font-weight: bold;
+            text-align: center !important;
+            margin: 20px 0 10px 0;
+        }
+
+        h1 {
+            color: crimson;
+        }
+
+        h2 {
+            color: chocolate;
+        }
+
+        img {
+            text-align: center;
+        }
+
+        .negrito {
+            font-weight: bold;
+        }
+
+        .texto-azul {
+            color: blue;
+        }
+
+        .container {
+            padding: 0 20%;
+        }
+
+        header {
+            height: 100px;
+            background-color: rgb(207, 227, 246);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* Define uma hierarquia quando tem 2 ou mais declarações com espaços separando. Neste caso, o css se aplica somente a UL que esteja dentro de uma TAG HTML com a class .menu-superior */
+
+        .menu-superior ul {
+            list-style-type: none;
+            overflow: hidden;
+            /* Garante que nada saia dos limites do Menu */
+            text-align: center;
+        }
+
+        .menu-superior li {
+            /* float: left; Flutua todos os elementos a esquerda */
+            display: inline-block;
+            /* Coloca os LI como blocos na mesma linha */
+        }
+
+        .menu-superior li a {
+            /* Faz o A pegar todo o espaço do LI */
+            display: block;
+            color: darkblue;
+            text-align: center;
+            padding: 10px 25px;
+            text-decoration: none;
+        }
+
+        /* HOVER aciona o CSS quando o mouse passa por cima do elemento */
+        .menu-superior li a:hover {
+            background-color: darkblue;
+            color: white;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            transform: translateY(-8px);
+        }
+
+        footer {
+            height: 100px;
+            background-color: rgb(183, 183, 183);
+        }
+
+        .menu-inferior {
+            text-align: center;
+        }
+
+        .img-ig {}
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="menu-superior texto-centralizado">
+                <ul>
+                    <li>
+                        <a href="index,html">Home</a>
+                    </li>
+                    <li>
+                        <a href="receitas-salgadas.html">Receitas Salgadas</a>
+                    </li>
+                    <li>
+                        <a href="receitas-doces.html">Receitas Doces</a>
+
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Bolo de Fubá</h1>
+
+        <div style="text-align: center;">
+            <img src="https://static.itdg.com.br/images/640-400/ae7bd030208d80a8606a5bb459264864/shutterstock-2318720935.jpg"
+                alt="Foto do bolo de fuba">
+        </div>
+
+        <p>
+            O bolo de fubá é um dos mais tradicionais do nosso país: é simples, gostoso e perfeito para aqueles momentos
+            regados com um<b class="texto-azul">café quentinho.</b>Com poucos ingredientes e passos simples, esse bolo
+            oferece um sabor clássico que
+            aquece o coração.<span class="negrito texto-azul">Para preparar esta receita de bolo de fubá, basta bater
+                todos
+                os ingredientes no liquidificador até obter uma massa homogênea e então assar até que o bolo esteja
+                dourado
+                e firme.</span>O resultado é um bolo de fubá fofinho, com uma textura delicada e um aroma inconfundível
+            da
+            farinha de milho. Cada fatia é um
+            convite a um sabor autêntico de infância, perfeito para acompanhar um café ou chá, de preferência na
+            companhia
+            da família ou dos amigos. Para aprender como fazer bolo de fubá simples ficar ainda mais gostoso, não
+            esqueça de
+            botar na mesa uma boa manteiga ou geleia para acrescentar em cada pedaço. Desfrute desta receita simples de
+            bolo
+            de fubá, repleta de tradição e doçura.
+        </p>
+
+        <h2>Ingredientes (8 porções)</h2>
+        <ul>
+            <li>3 ovos</li>
+            <li>2 xícaras (chá) de fubá</li>
+            <li>1/2 copo (americano) de óleo</li>
+            <li>1 colher (sopa) de fermento</li>
+            <li>2 xícaras (chá) de açúcar</li>
+            <li>3 colheres (sopa) rasas de farinha de trigo</li>
+            <li>1 copo de leite</li>
+        </ul>
+
+        <h2>Modo de preparo</h2>
+        <h3>Tempo de preparo: 5 min</h3>
+        <h3>Forno: 40 min</h3>
+        <ol>
+            <li>Bata todos os ingredientes no liquidificador.</li>
+            <li>Coloque em uma forma untada e enfarinhada.</li>
+            <li>Leve o bolo de fubá ao forno preaquecido e deixe assar por cerca de 40 minutos.</li>
+        </ol>
+    </div>
+    <footer>
+        <div class="menu-inferior">
+            <p>
+                Desenvolvido por José Augusto Zen Ferri
+            </p>
+            <img src="https://img.freepik.com/premium-vector/instagram-vector-logo-icon-social-media-logotype_901408-392.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="instagram" width="50"> 
+            
+        </div>
+    </footer>
+</body>
+
+</html>

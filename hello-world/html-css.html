@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<!-- CSS Cascate Style Sheet. A prioridade do CSS é de baixo para cima quando vc tem elementos e declarações iguais para a mesma coisa. Ele respeita quem está mais embaixo -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML com CSS</title>
+
+    <!-- A TAG STYLE no head é chamado de CSS Interno
+ Aqui podemos declarar formatações para toda a página -->
+
+    <Style>
+        /* O * é o coringa. Ele altera tudo. Na programação moderna, o conjunto de código abaixo é a
+        primeira coisa que a gente faz! É o chamado RESET. A gente "arranca" tudo do navegador! */
+
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* Tipo de declaração abaixo é TAG */
+
+        p {
+            color: #fa12fa;
+            font-weight: bold;
+        }
+
+        /* Para ID usamos o #, ele vai aplicar a um elemento específico */
+        #primeiroParagrafo {
+            color: orangered;
+        }
+
+        #segundoParagrafo {
+            color: darkviolet;
+            font-weight: 200;
+        }
+
+        p {
+            color: #ccc;
+        }
+
+        /* As classes começam com . e são aplicadas somente quando declaradas na propriedade
+    class da TAG, porém, podendo ser repetida a vontade */
+
+        .zebra {
+            background-color: aquamarine;
+
+            /* padding é expandir a borda (top, right, botton, left - sentido horário) dos elementos. Ainda temos as margens, que é a distancia desse elemento nos 4 pontos para outro elemento. Tanto para o pagging, quanto para o margin, teremos subdivisoes - margin-top, margin-right, margin-botton, margin-left. O mesmo vale para padding - pagging-top etc. Se colocar pagging ou margin: 50px - ele repete isso para todos os lados. Se colocarmos margin: 50px 150px ele modifica o y e o x do grafico */
+
+            padding: 5px 15px;
+        }
+
+        div {
+            display: block;
+        }
+
+/* O bloco abaixo modificou a div, empurrando o amarelo para dentro */
+
+        div div {
+            margin-left: 20px;
+            /* margin-top: 20px; */
+        }
+    </Style>
+
+</head>
+
+<body>
+
+    <!--- CSS Inline usa a propriedade style na TAG -->
+
+    <h1 style="color: crimson">Somente este H1 irá receber a formatação</h1>
+    <h1>Como não tenho style, fico na formatação padrão do navegador</h1>
+
+    <h2 style="font-family: Arial; font-size: 20px; color: #0000ff; text-align: center;">Tenho várias formatações no
+        INLINE</h2>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla soluta impedit a cum repellat sunt sequi tempore
+        iure minima, dignissimos, consectetur natus eum eius expedita quo itaque tenetur, ut maiores.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quasi illo natus delectus dolor libero esse nisi
+        numquam neque consectetur, repudiandae est dicta vitae ipsum, necessitatibus reprehenderit labore facilis
+        cupiditate?
+    </p>
+
+    <p id="primeiroParagrafo">
+        Eu tenho um ID
+    </p>
+
+    <p id="segundoParagrafo">
+        Eu tenho um segundo ID
+    </p>
+
+    <ol>
+        <li class="zebra">Item 1 </li>
+        <li>Item 2 </li>
+        <li class="zebra">Item 3 </li>
+        <li>Item 4 </li>
+        <li class="zebra">Item 5 </li>
+    </ol>
+
+    <div style="background-color: green; height: 200px; width: 200px;">
+        <div style="background-color: yellow; height: 100px; width: 100px">
+            <b style="background-color: blue; padding: 0px 0px 0px 0px">Teste de Padding</b>
+            <i style="margin: 0px 0px 0px 0px;">Teste de Margin</i>
+        </div>
+    </div>
+
+</body>
+
+</html>

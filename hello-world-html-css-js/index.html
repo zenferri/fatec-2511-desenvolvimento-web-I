@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <title>Texto da ABA</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea) 0%, #746ba2 100%;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 2px;
+            text-shadow: 20px 20px 23px rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            border: none;
+            padding: 15px, 30px;
+            font-size: 1.2em;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            transform: translateY(-3px) scale(1.3);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Bem vindos ao HTML, CSS e JS!</h1>
+    <p>
+        Vamos juntos <b>descobrir</b> um super poder digital
+    </p>
+
+    <button id="botaoMagia">Clique na Magia!</button>
+
+    <script>
+        let botao = document.getElementById('botaoMagia');
+        // Mudança de cores aleatórias
+        function mudarCores() {
+            const cores = ['#667eea', '#764ba2', '#ff6b6b', '#ee5a24', '#2ed573', '#1e90ff'];
+            const cor1 = cores[Math.floor(Math.random() * cores.length)];
+            const cor2 = cores[Math.floor(Math.random() * cores.length)];
+            document.body.style.background = `linear-gradient(135deg, ${cor1} 0%, ${cor2} 100%)`;
+        }
+
+        // Partículas flutuantes
+        function criarParticulas() {
+
+            // Limpar as particulas antigas
+            const particulasAntigas = document.querySelectorAll('.particula');
+            particulasAntigas.forEach(p => p.remove());
+
+            // Cria as particulas novas
+            for (let i = 0; i < 50; i++) {
+                const particula = document.createElement('div');
+                particula.className = 'particula';
+                particula.style.cssText = `
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: white;
+            border-radius: 50%;
+            top: ${Math.random() * 100}vh;
+            left: ${Math.random() * 100}vw;
+            animation: flutuar 3s ease-in-out infinite;
+        `;
+                document.body.appendChild(particula);
+            }
+        }
+
+        // Animação das partículas
+        const style = document.createElement('style');
+        style.textContent = `
+    @keyframes flutuar {
+        0%, 100% { transform: translateY(0) rotate(0deg); opacity: 1; }
+        50% { transform: translateY(-20px) rotate(180deg); opacity: 0.5; }
+    }
+`;
+        document.head.appendChild(style);
+
+        botao.addEventListener('click', function (e) {
+            mudarCores();
+            criarParticulas();
+            this.textContent = "Magia Ativada!";
+        })
+
+    </script>
+</body>
+
+</html>
