@@ -138,6 +138,152 @@ img {
 }
 
 .sobre-img {
-    flex: 1.75 160px;
+    flex: 1.75 1 160px;
     margin: 10px;
 }
+
+/* Produtos */
+
+.produtos {
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+.produtos h1 {
+    font-size: 3em;
+    margin: 0 10px 60px 10px;
+}
+
+.produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+}
+
+.produtos-item {
+    flex: 1 1 175px;
+    margin: 10px;
+}
+
+/* .produtos-item h2 {
+    font-size: 2em;
+    color: #392D53;
+    background: #f7f7f7;
+    padding: 60px 20px;
+} */
+
+.purple {
+    border-top: 6px solid #53476B;
+    padding: 20px 20px;
+}
+
+.pink {
+    border-top: 6px solid #53476B;
+    padding: 20px 20px;
+}
+
+.blue {
+    border-top: 6px solid #53476B;
+    padding: 20px 20px;
+}
+
+/* Preço */
+
+.preco {
+    background: #F6F4FA;
+    padding: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.preco-item {
+    flex: 1 1 260px;
+    border: 4px solid white;
+    padding: 20px;
+    margin: 10px;
+    /* min-width: 280px; */
+}
+
+.preco-item h2 {
+    font-size: 3em;
+    color: #392D53;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.preco-item span {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+    border-top: 4px solid white;
+}
+
+.preco-item sup {
+    font-size: .5em;
+}
+
+.preco-item sub {
+    font-size: .4em;
+}
+
+.preco-item ul {
+    max-width: 300px;
+    margin: 20px auto;
+    font-size: 1.25em;
+    /* line-height: 1; */
+    font-style: italic;
+    color: #392D53;
+}
+
+.preco-item li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.preco-item li::after {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #874efe;
+    border-radius: 50%;
+}
+
+.preco-item a {
+    max-width: 300px;
+    display: block;
+    margin: 20px auto;
+    border: 4px solid;
+    color: #874efe;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.preco-item:nth-child(3) {
+    background: #E3DEED;
+}
+
+@media (max-width: 800px) {
+    .preco {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .preco .preco-item:nth-child(3) {
+        order: -2;
+    }
+     .preco .preco-item:nth-child(2) {
+        order: -1;
+    }
+}
+
