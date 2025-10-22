@@ -4,33 +4,33 @@
 */
 
 :root {
-  /* Sua paleta de cores definida */
-  --primary-brand-1: #972524;
-  --primary-brand-2: #781D1D;
-  --primary-light-1: #FFFFFF;
-  --primary-light-2: #FAF4F4;
-  --primary-light-3: #EDDEDE;
-  --primary-dark-1: #361717;
-  --primary-dark-2: #532D2D;
-  --primary-dark-3: #6B4847;
+    /* Paleta de cores definida */
+    --primary-brand-1: #4d22b3;
+    --primary-brand-2: #3F1C93;
+    --primary-light-1: #FFFFFF;
+    --primary-light-2: #F6F4FA;
+    --primary-light-3: #E2DEED;
+    --primary-dark-1: #201736;
+    --primary-dark-2: #382D53;
+    --primary-dark-3: #52476B;
 
-  /* Mapeamento Semântico (como as cores serão usadas) */
-  --cor-fundo-claro: var(--primary-light-2);
-  --cor-fundo-medio: var(--primary-light-3);
-  --cor-fundo-branco: var(--primary-light-1);
+    /* Mapeamento Semântico (como as cores serão usadas) */
+    --cor-fundo-claro: var(--primary-light-2);
+    --cor-fundo-medio: var(--primary-light-3);
+    --cor-fundo-branco: var(--primary-light-1);
 
-  --cor-texto-principal: var(--primary-dark-1);
-  --cor-texto-secundario: var(--primary-dark-2);
-  --cor-texto-sobre-marca: var(--primary-light-3);
-  --cor-texto-link-sobre-marca: var(--primary-light-1);
+    --cor-texto-principal: var(--primary-dark-1);
+    --cor-texto-secundario: var(--primary-dark-2);
+    --cor-texto-sobre-marca: var(--primary-light-3);
+    --cor-texto-link-sobre-marca: var(--primary-light-1);
 
-  --cor-marca-principal: var(--primary-brand-1);
-  --cor-marca-secundaria: var(--primary-brand-2);
-  --cor-borda-acento: var(--primary-dark-3);
+    --cor-marca-principal: var(--primary-brand-1);
+    --cor-marca-secundaria: var(--primary-brand-2);
+    --cor-borda-acento: var(--primary-dark-3);
 }
 
 /* ================================================
-  = SEU CÓDIGO ADAPTADO
+  CÓDIGO ADAPTADO
   ================================================
 */
 
@@ -47,7 +47,8 @@ a {
 
 body {
     font-family: "Roboto", sans-serif;
-    color: var(--cor-texto-principal); /* Antigo: #222222 */
+    color: var(--cor-texto-principal);
+    /* Antigo: #222222 */
 }
 
 ul {
@@ -70,8 +71,10 @@ img {
 /* Superinfo */
 
 .superinfo-bg {
-    background: var(--cor-marca-principal); /* Antigo: #6D28FE */
-    color: var(--cor-texto-sobre-marca);    /* Antigo: #E3DEED */
+    background: var(--cor-marca-principal);
+    /* Antigo: #6D28FE */
+    color: var(--cor-texto-sobre-marca);
+    /* Antigo: #E3DEED */
 }
 
 .superinfo {
@@ -85,17 +88,20 @@ img {
 
 .superinfo a {
     margin: 0 10px 10px 10px;
-    color: var(--cor-texto-link-sobre-marca); /* Antigo: #FFFFFF */
+    color: var(--cor-texto-link-sobre-marca);
+    /* Antigo: #FFFFFF */
 }
 
 .superinfo a:hover {
-    color: var(--cor-texto-secundario); /* Antigo: #392D53 */
+    color: var(--cor-texto-secundario);
+    /* Antigo: #392D53 */
 }
 
 /* Menu */
 
 .menu-bg {
-    background: var(--cor-fundo-claro); /* Antigo: #F6F4FA */
+    background: var(--cor-fundo-claro);
+    /* Antigo: #F6F4FA */
 }
 
 .menu {
@@ -109,7 +115,8 @@ img {
 }
 
 .menu a {
-    color: var(--cor-texto-secundario); /* Antigo: #392D53 */
+    color: var(--cor-texto-secundario);
+    /* Antigo: #392D53 */
 }
 
 .menu-logo a {
@@ -130,7 +137,8 @@ img {
 }
 
 .menu-nav a:hover {
-    color: var(--cor-marca-principal); /* Antigo: #6D28FE */
+    color: var(--cor-marca-principal);
+    /* Antigo: #6D28FE */
 }
 
 /* Introdução */
@@ -147,20 +155,24 @@ img {
 }
 
 .introducao h1 {
-    color: var(--cor-marca-secundaria); /* Antigo: #874efe */
+    color: var(--cor-marca-secundaria);
+    /* Antigo: #874efe */
     font-size: 4em;
-    }
+}
 
 .introducao h2 {
-    color: var(--cor-borda-acento); /* Antigo: #53476B */
+    color: var(--cor-borda-acento);
+    /* Antigo: #53476B */
     font-size: 2.25em;
 }
 
 /* Sobre */
 
 .sobre {
-    border-top: 2px solid var(--cor-borda-acento); /* Antigo: #53476B */
-    border-bottom: 2px solid var(--cor-borda-acento); /* Antigo: #53476B */
+    border-top: 2px solid var(--primary-brand-1);
+    /* Antigo: #53476B */
+    border-bottom: 2px solid var(--primary-brand-1);
+    /* Antigo: #53476B */
     max-width: 960px;
     margin: 10px auto;
     padding: 60px 0;
@@ -176,13 +188,15 @@ img {
 .sobre-info h1 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
+    color: var(--cor-marca-secundaria);
 }
 
 .sobre-info p {
     font-size: 1.25em;
     line-height: 1.4;
     margin-bottom: 1em;
-    color: var(--cor-texto-secundario); /* Antigo: #392D53 */
+    color: var(--cor-texto-secundario);
+    /* Antigo: #392D53 */
 }
 
 .sobre-img {
@@ -194,18 +208,24 @@ img {
 
 .produtos {
     max-width: 960px;
-    margin: 20px auto;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .produtos h1 {
     font-size: 3em;
-    margin: 0 10px 60px 10px;
+    margin: 30px 10px 30px 10px;
+    color: var(--primary-brand-2);
 }
 
 .produtos-container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    /* flex-wrap: wrap; */
+    /* align-items: flex-end; */
+    display: flex;
+    align-items: center;
 }
 
 .produtos-item {
@@ -221,24 +241,28 @@ img {
 } */
 
 .purple {
-    border-top: 6px solid var(--cor-borda-acento); /* Antigo: #53476B */
+    border-top: 6px solid var(--cor-borda-acento);
+    /* Antigo: #53476B */
     padding: 20px 20px;
 }
 
 .pink {
-    border-top: 6px solid var(--cor-borda-acento); /* Antigo: #53476B */
+    border-top: 6px solid var(--cor-borda-acento);
+    /* Antigo: #53476B */
     padding: 20px 20px;
 }
 
 .blue {
-    border-top: 6px solid var(--cor-borda-acento); /* Antigo: #53476B */
+    border-top: 6px solid var(--cor-borda-acento);
+    /* Antigo: #53476B */
     padding: 20px 20px;
 }
 
 /* Preço */
 
 .preco {
-    background: var(--cor-fundo-claro); /* Antigo: #F6F4FA */
+    background: var(--cor-fundo-claro);
+    /* Antigo: #F6F4FA */
     padding: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -247,15 +271,17 @@ img {
 
 .preco-item {
     flex: 1 1 260px;
-    border: 4px solid var(--cor-fundo-branco); /* Antigo: white */
+    border: 4px solid var(--cor-fundo-branco);
+    /* Antigo: white */
     padding: 20px;
     margin: 10px;
     /* min-width: 280px; */
 }
 
 .preco-item h2 {
-    font-size: 3em;
-    color: var(--cor-texto-secundario); /* Antigo: #392D53 */
+    font-size: 2.3em;
+    color: var(--cor-texto-secundario);
+    /* Antigo: #392D53 */
     text-align: center;
     margin-top: 20px;
 }
@@ -268,7 +294,8 @@ img {
     text-align: center;
     font-weight: bold;
     padding: 10px 0 5px 0;
-    border-top: 4px solid var(--cor-fundo-branco); /* Antigo: white */
+    border-top: 4px solid var(--cor-fundo-branco);
+    /* Antigo: white */
 }
 
 .preco-item sup {
@@ -285,7 +312,8 @@ img {
     font-size: 1.25em;
     /* line-height: 1; */
     /* font-style: italic; */
-    color: var(--cor-texto-secundario); /* Antigo: #392D53 */
+    color: var(--cor-texto-secundario);
+    /* Antigo: #392D53 */
 }
 
 .preco-item li {
@@ -300,7 +328,8 @@ img {
     display: block;
     width: 6px;
     height: 6px;
-    background: var(--cor-marca-secundaria); /* Antigo: #874efe */
+    background: var(--cor-marca-secundaria);
+    /* Antigo: #874efe */
     border-radius: 50%;
 }
 
@@ -309,7 +338,8 @@ img {
     display: block;
     margin: 20px auto;
     border: 4px solid;
-    color: var(--cor-marca-secundaria); /* Antigo: #874efe */
+    color: var(--cor-marca-secundaria);
+    /* Antigo: #874efe */
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2em;
@@ -318,7 +348,8 @@ img {
 }
 
 .preco-item:nth-child(3) {
-    background: var(--cor-fundo-medio); /* Antigo: #E3DEED */
+    background: var(--cor-fundo-medio);
+    /* Antigo: #E3DEED */
 }
 
 @media (max-width: 800px) {
@@ -352,7 +383,8 @@ img {
 
 .qualidade-item h2 {
     font-size: 2.25em;
-    color: var(--cor-texto-secundario); /* Antigo: #392D53 */
+    color: var(--primary-dark-3);
+    /* Antigo: #392D53 */
     margin-bottom: 20px;
 }
 
@@ -362,7 +394,8 @@ img {
     width: 8px;
     height: 30px;
     margin-right: 10px;
-    background: var(--cor-marca-principal); /* Antigo: #6D28FE */
+    /* background: var(--cor-marca-principal); */
+    /* Antigo: #6D28FE */
 }
 
 /* Quero falar com o before do h2 do terceiro item */
@@ -370,21 +403,25 @@ img {
 e depois do 1 quero o terceiro item depois do 1.  */
 
 .qualidade-item:nth-of-type(3n+1) h2::before {
-    background: var(--cor-marca-principal); /* Antigo: #6121EB */
+    background: var(--cor-marca-principal);
+    /* Antigo: #6121EB */
 }
 
 .qualidade-item:nth-of-type(3n+2) h2::before {
-    background: var(--cor-marca-principal); /* Antigo: #6121EB */
+    background: var(--cor-marca-principal);
+    /* Antigo: #6121EB */
 }
 
 .qualidade-item:nth-of-type(3n+3) h2::before {
-    background: var(--cor-marca-principal); /* Antigo: #6121EB */
+    background: var(--cor-marca-principal);
+    /* Antigo: #6121EB */
 }
 
 .qualidade-item p {
     font-size: 1.25em;
     line-height: 1.4;
-    color: var(--cor-texto-secundario); /* Antigo: #392D53 */
+    color: var(--cor-texto-secundario);
+    /* Antigo: #392D53 */
 }
 
 /* Newsletter */
@@ -392,7 +429,8 @@ e depois do 1 quero o terceiro item depois do 1.  */
 /* Vamos pintar a área com CSS usando "calc"*/
 
 .newsletter {
-    background: var(--cor-fundo-claro); /* Antigo: #F6F4FA */
+    background: var(--cor-fundo-claro);
+    /* Antigo: #F6F4FA */
     /* Quero 100% que é o total do meu layout, 
     menos 960px que é o total do meu container, divididos por 2 */
     padding: 60px calc((100% - 960px) / 2);
@@ -407,14 +445,16 @@ e depois do 1 quero o terceiro item depois do 1.  */
 
 .newsletter-info h1 {
     font-size: 3em;
-    color: var(--cor-texto-secundario); /* Antigo: #392D53 */
+    color: var(--cor-texto-secundario);
+    /* Antigo: #392D53 */
 }
 
 .newsletter-info p {
     font-size: 1.25em;
     font-style: italic;
     max-width: 230px;
-    color: var(--cor-texto-secundario); /* Antigo: #392D53 */
+    color: var(--cor-texto-secundario);
+    /* Antigo: #392D53 */
     margin-bottom: 10px;
 }
 
@@ -429,8 +469,10 @@ e depois do 1 quero o terceiro item depois do 1.  */
 .newsletter-form input {
     flex: 3 1 200px;
     font-size: 1.25em;
-    color: var(--cor-texto-secundario); /* Antigo: #392D53 */
-    border: 4px solid var(--cor-marca-principal); /* Antigo: #6121EB */
+    color: var(--cor-texto-secundario);
+    /* Antigo: #392D53 */
+    border: 4px solid var(--cor-marca-principal);
+    /* Antigo: #6121EB */
     background: transparent;
     padding: 15px 10px;
     margin: 0px;
@@ -442,8 +484,10 @@ e depois do 1 quero o terceiro item depois do 1.  */
     font-size: 2.25em;
     font-weight: bold;
     text-transform: uppercase;
-    background-color: var(--cor-marca-principal); /* Antigo: #6121EB */
-    color: var(--cor-fundo-claro); /* Antigo: #F6F4FA */
+    background-color: var(--cor-marca-principal);
+    /* Antigo: #6121EB */
+    color: var(--cor-fundo-claro);
+    /* Antigo: #F6F4FA */
     margin: 0px;
     cursor: pointer;
     border: 0px;
@@ -461,7 +505,8 @@ e depois do 1 quero o terceiro item depois do 1.  */
 .footer {
     display: flex;
     height: 200px;
-    background: var(--cor-fundo-medio); /* Antigo: #E3DEED */
+    background: var(--cor-fundo-medio);
+    /* Antigo: #E3DEED */
     align-items: center;
 }
 
@@ -469,5 +514,6 @@ e depois do 1 quero o terceiro item depois do 1.  */
     flex: 1;
     text-align: center;
     font-size: 2.25em;
-    color: var(--cor-texto-secundario); /* Antigo: #392D53 */
+    color: var(--cor-texto-secundario);
+    /* Antigo: #392D53 */
 }
