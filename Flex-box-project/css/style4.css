@@ -1,18 +1,15 @@
-/* ================================================
-  = PALETA DE CORES E VARIÁVEIS
-  ================================================
-*/
+/* PALETA DE CORES E VARIÁVEIS */
 
 :root {
     /* Paleta de cores definida */
-    --primary-brand-1: #4d22b3;
-    --primary-brand-2: #3F1C93;
+    --primary-brand-1: #7b219f;
+    --primary-brand-2: #621A7F;
     --primary-light-1: #FFFFFF;
-    --primary-light-2: #F6F4FA;
-    --primary-light-3: #E2DEED;
-    --primary-dark-1: #201736;
-    --primary-dark-2: #382D53;
-    --primary-dark-3: #52476B;
+    --primary-light-2: #F9F4FA;
+    --primary-light-3: #E9DEED;
+    --primary-dark-1: #2D1736;
+    --primary-dark-2: #482D53;
+    --primary-dark-3: #61476B;
     --sombra-botao: #E3DAF6;
 
     /* Mapeamento Semântico (como as cores serão usadas) */
@@ -31,11 +28,6 @@
 
     --sombreamento: var(--sombra-botao);
 }
-
-/* ================================================
-  CÓDIGO ADAPTADO
-  ================================================
-*/
 
 body,
 h1,
@@ -75,9 +67,7 @@ img {
 
 .superinfo-bg {
     background: var(--cor-marca-principal);
-    /* Antigo: #6D28FE */
     color: var(--cor-texto-sobre-marca);
-    /* Antigo: #E3DEED */
 }
 
 .superinfo {
@@ -93,10 +83,6 @@ img {
     margin: 0 10px 10px 10px;
     color: var(--cor-texto-link-sobre-marca);
 }
-
-/* .superinfo a:hover {
-    color: var(--cor-texto-secundario);
-} */
 
 /* Menu */
 
@@ -140,34 +126,34 @@ img {
     color: var(--primary-light-1);
     padding: 10px 15px;
     margin: 0 10px;
-    border-radius: 12px;
+    border-radius: 100px;
     text-decoration: none;
     font-weight: 700;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .menu-nav ul li a {
-    display: block;                 
-    padding: 10px 18px;             
-    color: var(--primary-dark-1);                 
-    text-decoration: none;          
-    border-radius: 20px;             
-    transition: background 0.3s, color 0.3s;
+    display: block;
+    padding: 10px 18px;
+    color: var(--primary-dark-1);
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .menu-nav ul li a:hover {
-    background-color: var(--sombra-botao) ;    
-    color: var(--primary-dark-2);                 
+    background-color: var(--sombra-botao);
+    color: var(--primary-dark-2);
 
 }
 
 .menu-nav ul li a.botao-cadastro {
     background-color: var(--primary-brand-2);
     color: var(--primary-light-2);
-    border-radius: 20px;
+    border-radius: 100px;
     padding: 10px 20px;
     font-weight: 600;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 .menu-nav ul li a.botao-cadastro:hover {
@@ -177,8 +163,7 @@ img {
 /* Introdução */
 
 .introducao {
-    /* font-size: 2.5em; */
-    /* line-height: 1.5; */
+    line-height: 1.5;
     max-width: 960px;
     margin: 10px auto;
     padding: 60px 10px;
@@ -189,13 +174,13 @@ img {
 
 .introducao h1 {
     color: var(--cor-marca-secundaria);
-    /* Antigo: #874efe */
     font-size: 4em;
 }
 
 .introducao h2 {
     color: var(--cor-borda-acento);
     font-size: 2.25em;
+    text-align: center;
 }
 
 /* Sobre */
@@ -229,7 +214,10 @@ img {
 }
 
 .sobre-img {
-    flex: 1.75 1 160px;
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    flex: 2 200px;
     margin: 10px;
 }
 
@@ -247,12 +235,13 @@ img {
     font-size: 3em;
     margin: 30px 10px 30px 10px;
     color: var(--primary-brand-2);
+    text-align: center;
 }
 
 .produtos-container {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* align-items: flex-end; */
+    flex-wrap: wrap;
+    align-items: flex-end;
     display: flex;
     align-items: center;
 }
@@ -271,27 +260,25 @@ img {
 
 .purple {
     border-top: 6px solid var(--cor-borda-acento);
-    /* Antigo: #53476B */
     padding: 20px 20px;
 }
 
 .pink {
     border-top: 6px solid var(--cor-borda-acento);
-    /* Antigo: #53476B */
     padding: 20px 20px;
 }
 
 .blue {
     border-top: 6px solid var(--cor-borda-acento);
-    /* Antigo: #53476B */
     padding: 20px 20px;
 }
 
 /* Preço */
 
 .preco {
+    max-width: 960px;
+    margin: 10px auto;
     background: var(--cor-fundo-claro);
-    /* Antigo: #F6F4FA */
     padding: 60px;
     display: flex;
     flex-wrap: wrap;
@@ -301,16 +288,13 @@ img {
 .preco-item {
     flex: 1 1 260px;
     border: 4px solid var(--cor-fundo-branco);
-    /* Antigo: white */
     padding: 20px;
     margin: 10px;
-    /* min-width: 280px; */
 }
 
 .preco-item h2 {
     font-size: 2.3em;
     color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
     text-align: center;
     margin-top: 20px;
 }
@@ -324,7 +308,6 @@ img {
     font-weight: bold;
     padding: 10px 0 5px 0;
     border-top: 4px solid var(--cor-fundo-branco);
-    /* Antigo: white */
 }
 
 .preco-item sup {
@@ -339,10 +322,7 @@ img {
     max-width: 300px;
     margin: 20px auto;
     font-size: 1.25em;
-    /* line-height: 1; */
-    /* font-style: italic; */
     color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
 }
 
 .preco-item li {
@@ -358,7 +338,6 @@ img {
     width: 6px;
     height: 6px;
     background: var(--cor-marca-secundaria);
-    /* Antigo: #874efe */
     border-radius: 50%;
 }
 
@@ -368,17 +347,21 @@ img {
     margin: 20px auto;
     border: 4px solid;
     color: var(--cor-marca-secundaria);
-    /* Antigo: #874efe */
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2em;
     padding: 15px 0;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.preco-item:nth-child(3) {
+.preco-item a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.preco-item:nth-child(2) {
     background: var(--cor-fundo-medio);
-    /* Antigo: #E3DEED */
 }
 
 @media (max-width: 800px) {
@@ -396,61 +379,80 @@ img {
     }
 }
 
-/* Qualidade */
+/* QUALIDADE */
 
 .qualidade {
     max-width: 960px;
     margin: 60px auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .qualidade-item {
     flex: 1 1 300px;
+    /* background-color: var(--primary-light-2); */
+    /* border-radius: 8px; */
+    padding: 20px 10px;
     margin: 20px 10px;
+    /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
 }
 
+/* .qualidade-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+} */
+
 .qualidade-item h2 {
-    font-size: 2.25em;
+    font-size: 1.8em;
     color: var(--primary-dark-3);
-    /* Antigo: #392D53 */
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
 }
 
 .qualidade-item h2::before {
     content: '';
     display: inline-block;
-    width: 8px;
-    height: 30px;
+    width: 6px;
+    height: 28px;
     margin-right: 10px;
-    /* background: var(--cor-marca-principal); */
-    /* Antigo: #6D28FE */
+    border-radius: 2px;
 }
 
-/* Quero falar com o before do h2 do terceiro item */
-/* Posso colocar uma expressão - 3n+1. Significa que o 1 seja selecionado 
-e depois do 1 quero o terceiro item depois do 1.  */
-
+/* Cores alternadas nas barras laterais */
 .qualidade-item:nth-of-type(3n+1) h2::before {
-    background: var(--cor-marca-principal);
-    /* Antigo: #6121EB */
+    background: violet;
+    /* Roxo principal */
 }
 
 .qualidade-item:nth-of-type(3n+2) h2::before {
-    background: var(--cor-marca-principal);
-    /* Antigo: #6121EB */
+    background: blueviolet;
+    /* Tom secundário */
 }
 
 .qualidade-item:nth-of-type(3n+3) h2::before {
-    background: var(--cor-marca-principal);
-    /* Antigo: #6121EB */
+    background: var(--primary-brand-1);
+    /* Tom mais escuro */
 }
 
 .qualidade-item p {
-    font-size: 1.25em;
-    line-height: 1.4;
-    color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: var(--primary-dark-3);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .qualidade {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .qualidade-item {
+        flex: 1 1 100%;
+        margin: 10px 0;
+    }
 }
 
 /* Newsletter */
@@ -459,7 +461,6 @@ e depois do 1 quero o terceiro item depois do 1.  */
 
 .newsletter {
     background: var(--cor-fundo-claro);
-    /* Antigo: #F6F4FA */
     /* Quero 100% que é o total do meu layout, 
     menos 960px que é o total do meu container, divididos por 2 */
     padding: 60px calc((100% - 960px) / 2);
@@ -475,15 +476,13 @@ e depois do 1 quero o terceiro item depois do 1.  */
 .newsletter-info h1 {
     font-size: 3em;
     color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
+
 }
 
 .newsletter-info p {
-    font-size: 1.25em;
-    font-style: italic;
+    font-size: 1em;
     max-width: 230px;
     color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
     margin-bottom: 10px;
 }
 
@@ -499,9 +498,6 @@ e depois do 1 quero o terceiro item depois do 1.  */
     flex: 3 1 200px;
     font-size: 1.25em;
     color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
-    border: 4px solid var(--cor-marca-principal);
-    /* Antigo: #6121EB */
     background: transparent;
     padding: 15px 10px;
     margin: 0px;
@@ -514,9 +510,7 @@ e depois do 1 quero o terceiro item depois do 1.  */
     font-weight: bold;
     text-transform: uppercase;
     background-color: var(--cor-marca-principal);
-    /* Antigo: #6121EB */
     color: var(--cor-fundo-claro);
-    /* Antigo: #F6F4FA */
     margin: 0px;
     cursor: pointer;
     border: 0px;
@@ -535,7 +529,6 @@ e depois do 1 quero o terceiro item depois do 1.  */
     display: flex;
     height: 200px;
     background: var(--cor-fundo-medio);
-    /* Antigo: #E3DEED */
     align-items: center;
 }
 
@@ -544,5 +537,4 @@ e depois do 1 quero o terceiro item depois do 1.  */
     text-align: center;
     font-size: 2em;
     color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
 }

@@ -5,14 +5,16 @@
 
 :root {
     /* Paleta de cores definida */
-    --primary-brand-1: #4d22b3;
-    --primary-brand-2: #3F1C93;
+    --primary-brand-1: #7b219f;
+    --primary-brand-2: #621A7F;
+      /* --primary-brand-1: #74a7fe;
+    --primary-brand-2: #4E8FFE; */
     --primary-light-1: #FFFFFF;
-    --primary-light-2: #F6F4FA;
-    --primary-light-3: #E2DEED;
-    --primary-dark-1: #201736;
-    --primary-dark-2: #382D53;
-    --primary-dark-3: #52476B;
+    --primary-light-2: #F9F4FA;
+    --primary-light-3: #E9DEED;
+    --primary-dark-1: #2D1736;
+    --primary-dark-2: #482D53;
+    --primary-dark-3: #61476B;
     --sombra-botao: #E3DAF6;
 
     /* Mapeamento Semântico (como as cores serão usadas) */
@@ -93,10 +95,6 @@ img {
     margin: 0 10px 10px 10px;
     color: var(--cor-texto-link-sobre-marca);
 }
-
-/* .superinfo a:hover {
-    color: var(--cor-texto-secundario);
-} */
 
 /* Menu */
 
@@ -189,13 +187,13 @@ img {
 
 .introducao h1 {
     color: var(--cor-marca-secundaria);
-    /* Antigo: #874efe */
     font-size: 4em;
 }
 
 .introducao h2 {
     color: var(--cor-borda-acento);
     font-size: 2.25em;
+    text-align: center;
 }
 
 /* Sobre */
@@ -247,6 +245,7 @@ img {
     font-size: 3em;
     margin: 30px 10px 30px 10px;
     color: var(--primary-brand-2);
+    text-align: center;
 }
 
 .produtos-container {
@@ -324,7 +323,6 @@ img {
     font-weight: bold;
     padding: 10px 0 5px 0;
     border-top: 4px solid var(--cor-fundo-branco);
-    /* Antigo: white */
 }
 
 .preco-item sup {
@@ -342,7 +340,6 @@ img {
     /* line-height: 1; */
     /* font-style: italic; */
     color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
 }
 
 .preco-item li {
@@ -358,7 +355,6 @@ img {
     width: 6px;
     height: 6px;
     background: var(--cor-marca-secundaria);
-    /* Antigo: #874efe */
     border-radius: 50%;
 }
 
@@ -368,7 +364,6 @@ img {
     margin: 20px auto;
     border: 4px solid;
     color: var(--cor-marca-secundaria);
-    /* Antigo: #874efe */
     text-transform: uppercase;
     font-weight: bold;
     font-size: 2em;
@@ -378,7 +373,6 @@ img {
 
 .preco-item:nth-child(3) {
     background: var(--cor-fundo-medio);
-    /* Antigo: #E3DEED */
 }
 
 @media (max-width: 800px) {
@@ -413,7 +407,6 @@ img {
 .qualidade-item h2 {
     font-size: 2.25em;
     color: var(--primary-dark-3);
-    /* Antigo: #392D53 */
     margin-bottom: 20px;
 }
 
@@ -424,7 +417,6 @@ img {
     height: 30px;
     margin-right: 10px;
     /* background: var(--cor-marca-principal); */
-    /* Antigo: #6D28FE */
 }
 
 /* Quero falar com o before do h2 do terceiro item */
@@ -433,24 +425,20 @@ e depois do 1 quero o terceiro item depois do 1.  */
 
 .qualidade-item:nth-of-type(3n+1) h2::before {
     background: var(--cor-marca-principal);
-    /* Antigo: #6121EB */
 }
 
 .qualidade-item:nth-of-type(3n+2) h2::before {
     background: var(--cor-marca-principal);
-    /* Antigo: #6121EB */
 }
 
 .qualidade-item:nth-of-type(3n+3) h2::before {
     background: var(--cor-marca-principal);
-    /* Antigo: #6121EB */
 }
 
 .qualidade-item p {
     font-size: 1.25em;
     line-height: 1.4;
     color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
 }
 
 /* Newsletter */
@@ -475,7 +463,7 @@ e depois do 1 quero o terceiro item depois do 1.  */
 .newsletter-info h1 {
     font-size: 3em;
     color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
+
 }
 
 .newsletter-info p {
@@ -483,7 +471,6 @@ e depois do 1 quero o terceiro item depois do 1.  */
     font-style: italic;
     max-width: 230px;
     color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
     margin-bottom: 10px;
 }
 
@@ -499,9 +486,6 @@ e depois do 1 quero o terceiro item depois do 1.  */
     flex: 3 1 200px;
     font-size: 1.25em;
     color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
-    border: 4px solid var(--cor-marca-principal);
-    /* Antigo: #6121EB */
     background: transparent;
     padding: 15px 10px;
     margin: 0px;
@@ -514,9 +498,7 @@ e depois do 1 quero o terceiro item depois do 1.  */
     font-weight: bold;
     text-transform: uppercase;
     background-color: var(--cor-marca-principal);
-    /* Antigo: #6121EB */
     color: var(--cor-fundo-claro);
-    /* Antigo: #F6F4FA */
     margin: 0px;
     cursor: pointer;
     border: 0px;
@@ -535,7 +517,6 @@ e depois do 1 quero o terceiro item depois do 1.  */
     display: flex;
     height: 200px;
     background: var(--cor-fundo-medio);
-    /* Antigo: #E3DEED */
     align-items: center;
 }
 
@@ -544,5 +525,4 @@ e depois do 1 quero o terceiro item depois do 1.  */
     text-align: center;
     font-size: 2em;
     color: var(--cor-texto-secundario);
-    /* Antigo: #392D53 */
 }
