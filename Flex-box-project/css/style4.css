@@ -2,15 +2,15 @@
 
 :root {
     /* Paleta de cores definida */
-    --primary-brand-1: #7b219f;
-    --primary-brand-2: #621A7F;
+    --primary-brand-1: #4361EE;
+    --primary-brand-2: #1F3BC0;
     --primary-light-1: #FFFFFF;
-    --primary-light-2: #F9F4FA;
-    --primary-light-3: #E9DEED;
-    --primary-dark-1: #2D1736;
-    --primary-dark-2: #482D53;
-    --primary-dark-3: #61476B;
-    --sombra-botao: #E3DAF6;
+    --primary-light-2: #EFF1FE;
+    --primary-light-3: #D5DBFB;
+    --primary-dark-1: #101C5E;
+    --primary-dark-2: #2D3979;
+    --primary-dark-3: #474E6B;
+    --sombra-botao: #D5DBFB;
 
     /* Mapeamento Semântico (como as cores serão usadas) */
     --cor-fundo-claro: var(--primary-light-2);
@@ -29,6 +29,20 @@
     --sombreamento: var(--sombra-botao);
 }
 
+/* Sumir com o scrollbar */
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+/* Firefox */
+html {
+    scrollbar-width: none;
+    /* remove a barra visual */
+}
+
 body,
 h1,
 h2,
@@ -43,7 +57,6 @@ a {
 body {
     font-family: "Roboto", sans-serif;
     color: var(--cor-texto-principal);
-    /* Antigo: #222222 */
 }
 
 ul {
@@ -63,6 +76,17 @@ img {
     box-sizing: border-box;
 }
 
+/* Fixa menu-top durante o scroll */
+
+.menu-top {
+    position: sticky;
+    /* fixa no topo durante o scroll */
+    top: 0;
+    z-index: 50;
+    /* fica acima do conteúdo */
+    /* border-bottom: 1px solid var(--primary-dark-3); linha sutil de separação */
+}
+
 /* Superinfo */
 
 .superinfo-bg {
@@ -71,7 +95,7 @@ img {
 }
 
 .superinfo {
-    max-width: 960px;
+    max-width: 1440px;
     margin: 0 auto;
     display: flex;
     justify-content: right;
@@ -91,7 +115,7 @@ img {
 }
 
 .menu {
-    max-width: 960px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 15px 0;
     display: flex;
@@ -108,6 +132,13 @@ img {
     font-size: 2.25em;
     font-weight: bold;
     margin: 0 10px;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
 }
 
 .menu-nav ul {
@@ -164,23 +195,61 @@ img {
 
 .introducao {
     line-height: 1.5;
-    max-width: 960px;
+    max-width: 1440px;
     margin: 10px auto;
     padding: 60px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* background-color: var(--primary-dark-1); */
 }
 
 .introducao h1 {
     color: var(--cor-marca-secundaria);
     font-size: 4em;
+    text-align: center;
 }
 
 .introducao h2 {
-    color: var(--cor-borda-acento);
+    color: var(--primary-dark-3);
+    ;
     font-size: 2.25em;
     text-align: center;
+}
+
+/* TRANSPARÊNCIA */
+
+/* garante contexto de isolamento para o efeito de blur */
+.menu-top {
+    position: sticky;
+    /* Faz o elemento grudar no topo durante o scroll */
+    top: 0;
+    /* define que ele deve ficar exatamente no topo */
+    z-index: 50;
+    /* Garante que o menu fique acima de todos os outros elementos */
+    isolation: isolate;
+    /* Cria um novo contexto de empilhamento visual impedindo q o blur seja afetado por contextos externos*/
+}
+
+/* barra superior (links Blog/Documentos/Suporte/Vendas) com vidro fosco */
+.superinfo-bg {
+    /* cor base da sua paleta com alpha */
+    background: rgba(67, 97, 238, 0.72);
+    /* a variável não funcionou para transparência. Considerando o CSS, mantive o backuground acima, já que se tirar essa parte do código, a estrutura se mantém. */
+    /* vidro fosco */
+    backdrop-filter: saturate(160%) blur(12px);
+    -webkit-backdrop-filter: saturate(160%) blur(12px);
+    /* para não “vazar” em bordas e evitar artefatos */
+    background-clip: padding-box;
+}
+
+/* header do menu principal com vidro fosco */
+.menu-bg {
+    background: rgba(239, 241, 254, 0.82);
+    /* explicação acima - em background do superinfo-bg */
+    backdrop-filter: saturate(160%) blur(12px);
+    -webkit-backdrop-filter: saturate(160%) blur(12px);
+    background-clip: padding-box;
 }
 
 /* Sobre */
@@ -188,11 +257,12 @@ img {
 .sobre {
     border-top: 2px solid var(--primary-brand-1);
     border-bottom: 2px solid var(--primary-brand-1);
-    max-width: 960px;
+    max-width: 1440px;
     margin: 10px auto;
     padding: 60px 0;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .sobre-info {
@@ -202,29 +272,32 @@ img {
 
 .sobre-info h1 {
     font-size: 2.5em;
+    margin: 10px 20px;
     margin-bottom: 0.5em;
     color: var(--cor-marca-secundaria);
 }
 
 .sobre-info p {
+    flex: 2 1 300px;
+    margin: 20px 20px;
     font-size: 1.25em;
     line-height: 1.4;
     margin-bottom: 1em;
-    color: var(--cor-texto-secundario);
+    color: var(--primary-dark-3);
+    ;
 }
 
 .sobre-img {
     width: 100%;
     border-radius: 12px;
-    display: block;
-    flex: 2 200px;
-    margin: 10px;
+    flex: 2 1;
+    margin: 0 auto;
 }
 
 /* Produtos */
 
 .produtos {
-    max-width: 960px;
+    max-width: 1440px;
     margin: 30px auto;
     display: flex;
     flex-direction: column;
@@ -247,16 +320,9 @@ img {
 }
 
 .produtos-item {
-    flex: 1 1 175px;
+    flex: 1 200px;
     margin: 10px;
 }
-
-/* .produtos-item h2 {
-    font-size: 2em;
-    color: var(--cor-texto-secundario);
-    background: var(--cor-fundo-claro);
-    padding: 60px 20px;
-} */
 
 .purple {
     border-top: 6px solid var(--cor-borda-acento);
@@ -276,7 +342,7 @@ img {
 /* Preço */
 
 .preco {
-    max-width: 960px;
+    max-width: 1440px;
     margin: 10px auto;
     background: var(--cor-fundo-claro);
     padding: 60px;
@@ -371,18 +437,18 @@ img {
     }
 
     .preco .preco-item:nth-child(3) {
-        order: -2;
+        order: -1;
     }
 
     .preco .preco-item:nth-child(2) {
-        order: -1;
+        order: -2;
     }
 }
 
 /* QUALIDADE */
 
 .qualidade {
-    max-width: 960px;
+    max-width: 1440px;
     margin: 60px auto;
     display: flex;
     flex-wrap: wrap;
@@ -390,7 +456,7 @@ img {
 }
 
 .qualidade-item {
-    flex: 1 1 300px;
+    flex: 1 1 400px;
     /* background-color: var(--primary-light-2); */
     /* border-radius: 8px; */
     padding: 20px 10px;
@@ -462,8 +528,8 @@ img {
 .newsletter {
     background: var(--cor-fundo-claro);
     /* Quero 100% que é o total do meu layout, 
-    menos 960px que é o total do meu container, divididos por 2 */
-    padding: 60px calc((100% - 960px) / 2);
+    menos 1440px que é o total do meu container, divididos por 2 */
+    padding: 60px calc((100% - 1440px) / 2);
     display: flex;
     flex-wrap: wrap;
 }
