@@ -1,54 +1,73 @@
-// Isto é um comentário. O JS não o lê
+// Comentário em js
 
-/* Este comentário pode ter várias linhas
-*/
+/**
+ * 
+ *Comentário em 
+  varias linhas 
+ * 
+ */
 
-// Exibe um alerta na tela do usuário (último recurso)
+// Exibe um alterta na tela do usuário (último recurso)
+// alert("Olá mundo!"); // Isso é infernal
 
-// Exibe dados no console do navegador (ótimo para depuração)
+// Exibe dados no console do navegador (Ótimo para depuração)
+
 console.log("Olá amiguinhos!");
-console.warn("Devo aparecer amarelinho");
-console.error("Posso aparecer vermelhinho");
+console.warn("Devo aparecer amarelinho!");
+console.error("Eu devo estar vermelinho!");
 
-// para criar variáveis usamos var, let e const
-// var é uma forma primitiva e tem escopo global (evitar)
-var texto = "Um texto muito louco"
-console.log("Variavel texto: " + texto);
+// para criar variáveis usamos ou var, let e const
+// var é uma forma primitiva e tem escopo global
 
-// let tem escopo local e é mais indicado
+var texto = "Um texto muito louco!";
+console.log("Variavel texto: " + texto)
+
+//let tem escopo local e é mais indicado
 let ano = 2025;
 console.log("Variável ano:", ano);
 
-// Const cria um valor que jamais poderá ser alterado
-const pi = 3.14;
-console.log("Variável pi = " + pi, "Sempre usam isso para const")
+// const cria um valor que jamais poderá ser alterado
+const pi = 3.14
+console.log("Variável pi:" + pi, "Sempre usam esse exemplo para const!");
 
-/*
-O JS é fracamente tipado, ou seja, não falamos o tipo de variável e ela 
-pode mudar de tipo bastando passar um novo valor para ela.
+/**
+ * O js é fracamente tipado, não falamos o tipo da variável
+ * e ela pode mudar de tipo bastando passar um novo valor para ela.
+ * 
+ * No JS não existe explicitamente float e int, tudo é number
+ */
 
-No JS não existe explicitamente flot e int, tudo é number
-*/
-
-// Podemos transportar um elemento do HTML para o JS
-// Usamos a função getElementById ou similar 
-// A página como um todo é chamada de document e tudo vem dela.
+// podermos transportar um elemnto do HTML para o JS
+// Usamos a função getElementById ou similar
+// a página como um todo é chamada de document e tudo vem dela
 
 let nome = document.getElementById('nome');
-let idade = document.getElementById('idade');
 
+let nascimento = document.getElementById('nascimento');
 
-/* O JS, ao abrir uma página mapeia toda a página de internet e transforma tudo 
-em variáveis ramificadas (objetos). 
+let faculdade = document.getElementById('faculdade');
 
-O document possui todo o HTML da página mepeado como propriedades.
+let cor = document.getElementById('cor');
 
-Ex de como pegar todo o body da página: document.body
-*/
+let resultado = document.getElementById("resultado");
 
-document.title = "Troquei o tittle da pagina com o JS!";
+/**
+ * O JS ao abrir uma página mapeia toda a página de internet e transforma
+ * tudo em variaveis ramificadas (Objetos)
+ * 
+ * O document possui todo o HTML da página mapeado como propriedades 
+ * Ex de como pegar todo o body da página : document.body
+ */
+
+document.title = "Troquei o title da página com JS!"
 
 function calcularIdade(){
-    let idade = ano - nascimento;
-    console.log(`Você nasceu em ${nascimento.value}, estamos em ${ano} então você tem ${idade}`); 
+    let idade = ano - nascimento.value;
+    let textoResultado = `Você nasceu em ${nascimento.value}, estamos em ${ano}, então você tem ${idade}!`
+    console.log(textoResultado);
+    resultado.innerHTML = textoResultado
+}
+
+function trocarCorPagina() {
+    document.body.style.backgroundColor = cor.value;
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+
+    <h1>Formulário</h1>
+    <form action="#">
+        <label for="nome">Digite o seu nome</label> <br>
+        <input type="text" name="" id="nome" placeholder="nome completo" minlength="3" maxlength="50" required>
+
+
+        <label for="faculdade">Faculdade</label>
+        <input type="text" name="faculdade" value="Fatec Jahu" id="faculdade">
+
+        <label for="Nascimento">Ano Nascimento</label>
+        <input type="number" name="" id="nascimento" min="0" max="2025">
+
+        <label for="cor">Escolha uma cor</label>
+        <input type="color" name="cor" id="cor">
+
+
+        <br><br>
+        <input type="submit" disabled value="Enviar o FORM">
+        <button type="submit" disabled>Tambem envia o FORM</button>
+
+        <br>
+        <br>
+        <input type="reset" value="Limpar">
+        <button type="reset">Limpar</button>
+
+        <button type="button" onclick="calcularIdade()">Calcular a Idade!</button>
+
+        <button type="button" onclick="trocarCorPagina()">Trocar cor da Pagina</button>
+    </form>
+    
+     <p id="resultado"></p>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
