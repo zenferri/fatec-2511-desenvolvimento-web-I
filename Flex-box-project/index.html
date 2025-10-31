@@ -21,8 +21,27 @@
     <!-- Meta TAG para o responsivo funcionar -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
+    <!-- Declara que o site usa esquema de cores claro para evitar cagada do Android -->
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CSS  inline para evitar flash escuro antes do CSS externo -->
+    <style>
+        :root {
+            color-scheme: light only;
+        }
+
+        /* impede darkening automático */
+        html,
+        body {
+            background: #fff;
+            color: #101C5E;
+        }
+    </style>
+
     <!-- CSS externo -->
-    <link rel="stylesheet" type="text/css" href="css/style4.css">
+    <link rel="stylesheet" type="text/css" href="css/style4.css?v=1.0.2">
 
 </head>
 

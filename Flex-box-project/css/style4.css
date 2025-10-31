@@ -54,6 +54,10 @@ a {
     padding: 0px;
 }
 
+html, body {
+  background: var(--primary-light-1); /* #FFFFFF */
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: var(--cor-texto-principal);
@@ -569,6 +573,8 @@ img {
     margin: 0px;
     border-radius: 0px;
 }
+
+
 
 .newsletter-form button {
     flex: 1 1 200px;
