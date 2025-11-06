@@ -533,7 +533,7 @@ img {
     background: var(--cor-fundo-claro);
     /* Quero 100% que é o total do meu layout, 
     menos 1440px que é o total do meu container, divididos por 2 */
-    padding: 60px calc((100% - 1440px) / 2);
+    padding: 50px calc((100% - 1440px) / 2);
     display: flex;
     flex-wrap: wrap;
 }
@@ -557,7 +557,7 @@ img {
 }
 
 .newsletter-form {
-    flex: 2 1 260px;
+    flex: 2 1 200px;
     margin: 0 10px;
     align-self: center;
     display: flex;
@@ -566,19 +566,17 @@ img {
 
 .newsletter-form input {
     flex: 3 1 200px;
-    font-size: 1.25em;
+    font-size: 1.5em;
     color: var(--cor-texto-secundario);
     background: transparent;
-    padding: 15px 10px;
+    padding: 10px;
     margin: 0px;
-    border-radius: 0px;
+    border-radius: px;
 }
-
-
 
 .newsletter-form button {
     flex: 1 1 200px;
-    font-size: 2.25em;
+    font-size: 2em;
     font-weight: bold;
     text-transform: uppercase;
     background-color: var(--cor-marca-principal);
@@ -586,7 +584,7 @@ img {
     margin: 0px;
     cursor: pointer;
     border: 0px;
-    padding: 15px 10px;
+    padding: 10px;
 }
 
 @media (max-width: 600px) {
