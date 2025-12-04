@@ -1,0 +1,8 @@
+.bg-blcak {
+    background-color: black;
+    color: white;
+}
+
+.display-6 {
+    font-size: calc(0.7rem + 1vw);
+}
